@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+
+    <RadioGroup
+        android:id="@+id/payment_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/radio_group_background">
+
+
+        <RadioButton
+            android:id="@+id/radio_cod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash on Delivery"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:buttonTint="#673AB7"
+            android:textColor="#000000" />
+
+
+        <RadioButton
+            android:id="@+id/radio_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Payment"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:buttonTint="#6200EE"
+            android:textColor="#000000" />
+
+
+        <RadioButton
+            android:id="@+id/radio_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Payment"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:buttonTint="#6200EE"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"
+        android:layout_marginVertical="16dp" />
+
+
+    <Button
+        android:id="@+id/confirm_order_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Order"
+        android:backgroundTint="#6200EE"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

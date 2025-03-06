@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="#e0ebe3" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="480dp"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello Admin"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="34sp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_insert_product"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:text="Insert Product"
+                android:backgroundTint="#063970" />
+
+            <Button
+                android:id="@+id/btn_view_product"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:text="View Product"
+                android:backgroundTint="#063970" />
+
+            <Button
+                android:id="@+id/btn_update_product"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:text="Update Product"
+                android:backgroundTint="#063970" />
+
+            <Button
+                android:id="@+id/btn_delete_product"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:text="Delete Product"
+                android:backgroundTint="#063970" />
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/btn_admin_logout"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:text="Logout"
+                android:backgroundTint="#ff0000"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
